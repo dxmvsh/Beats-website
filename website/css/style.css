@@ -1,0 +1,52 @@
+/* Fonts start */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500');
+/* Fonts end */
+
+body{
+	font-family: 'Work Sans', sans-serif !important;
+}
+.nav-item.active{
+	border-bottom: black 1px solid;
+}
+
+.carousel__frame {
+      width: 100%;
+      height: 800px;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0;
+      padding: 0;
+}
+
+img {
+      width: 100%;
+      height: 800px;
+      background-position: center;
+      display: table;
+}
+
+.carousel__slides {
+      display: block;
+}
+
+.carousel__item {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: inline-block;
+}
+
+.carousel__prev, .carousel__next {
+      font-size: 1rem;
+      position: absolute;
+      top: 50%;
+}
+
+.carousel__prev {
+      left: 2rem;
+}
+
+.carousel__next {
+      right: 2rem;
+}
