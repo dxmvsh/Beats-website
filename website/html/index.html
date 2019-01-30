@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
 	<title>Zone6teen Beats</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/script.js"></script>
 	<script src="js/lory.min.js"></script>
 </head>
 <body>
@@ -32,25 +32,47 @@
 
 <!-- Carousel start -->
 	<section>
-		<div class="carousel js-carousel">
-            <figure class="carousel__frame js-carousel__frame">
-                  <div class="carousel__slides js-carousel__slides">
-                        <img src="assets/img/img1.jpg" class="carousel__item" />
-                        <img src="assets/img/img2.jpg" class="carousel__item" />
-                        <img src="assets/img/img3.jpg" class="carousel__item" />
-                        <img src="assets/img/img4.jpg" class="carousel__item" />
-                        <img src="assets/img/img5.jpg" class="carousel__item" />
-                  </div>
-                <span class="carousel__prev js-carousel__prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M302.67 90.877l55.77 55.508L254.575 250.75 358.44 355.116l-55.77 55.506L143.56 250.75z"/></g></svg>
-                </span>
-                <span class="carousel__next js-carousel__next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 501.5 501.5"><g><path fill="#2E435A" d="M199.33 410.622l-55.77-55.508L247.425 250.75 143.56 146.384l55.77-55.507L358.44 250.75z"/></g></svg>
-                </span>
-
-            </figure>
-        </div>
-
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  <ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		  </ol>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		    	<div class="carousel-overlay"></div>
+		      	<img id="img1" src="../assets/img/img10.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Purchase high quality beats</h1>
+					<a class="btn btn-slider" href="">Purchase</a>
+				</div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="carousel-overlay"></div>
+		      	<img id="img2" src="../assets/img/img2.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block"> 
+					<h1>Buy 1 Beat Get 1 Free</h1>
+					<a class="btn btn-slider" href="">Learn more</a>
+				</div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="carousel-overlay"></div>
+		      	<img id="img3" src="../assets/img/img3.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h1>Make your fans bounce</h1>
+					<a class="btn btn-slider" href="">Purchase</a>
+				</div>
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
 	</section>
 <!-- Carousel end -->
 
