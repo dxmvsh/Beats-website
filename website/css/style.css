@@ -24,7 +24,12 @@ body{
 	z-index: 5;
 }
 .carousel-item{
-	height: 550px !important;
+	height: 550px;
+}
+@media only screen and (max-width: 1080px){
+	.carousel-item{
+		height: auto;
+	}
 }
 .btn{
 	cursor: pointer;
@@ -36,7 +41,7 @@ body{
 	height: 100%;
 	width: 100%;
 	z-index: 3;
-	background-color: rgba(0,0,0,.7);
+	background-color: rgba(0,0,0,.5);
 }
 .carousel-caption{
 	top: 35% !important;
@@ -44,6 +49,30 @@ body{
 .carousel-caption h1{
 	margin-bottom: 20px;
 	font-size: 60px;
+}
+@media only screen and (max-width: 768px){
+	.carousel-caption{
+		top: 35% !important;
+	}
+	.carousel-caption h1{
+		margin-bottom: 10px;
+		font-size: 40px;
+	}
+	.carousel-caption a{
+		font-size: 25px;
+	}
+}
+@media only screen and (max-width: 414px){
+	.carousel-caption{
+		top: 35% !important;
+	}
+	.carousel-caption h1{
+		margin-bottom: 10px;
+		font-size: 20px;
+	}
+	.carousel-caption a{
+		font-size: 10px;
+	}
 }
 .btn-slider{
 	padding: 5px 20px;
@@ -54,7 +83,6 @@ body{
 
 .btn-slider:hover{
 	color: black;
-	background-color: #fff;
-	border-color: #000;
+	background-color: rgb(255,255,255);
 	transition: .5s;
 }
