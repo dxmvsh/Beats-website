@@ -5,7 +5,16 @@
 body{
 	font-family: 'Work Sans', sans-serif !important;
 }
-
+.separator{
+	display: block;
+	position: relative;
+	height: 1px;
+	border-bottom: 1px solid grey;
+}
+.separator.small{
+	width: 27px;
+}
+/*Navbar section start*/
 .nav-item.active{
 	border-bottom: black 2px solid;
 }
@@ -18,7 +27,15 @@ body{
 .nav-item:hover .nav-item.active{
 	border: none;
 }
+.navbar{
+	height: 50px;
+}
+.navbar-nav{
+	height: 42px;
+}
+/* Navbar section end */
 
+/* Carousel section start */
 .carousel-control-next, .carousel-control-prev{
 	width: 5%;
 	z-index: 5;
@@ -86,3 +103,25 @@ body{
 	background-color: rgb(255,255,255);
 	transition: .5s;
 }
+/* Carousel section end */
+
+/* Store section start*/
+.store{
+	margin-top: 50px;
+}
+.store-main{
+	height: 700px;
+}
+/* Store section end*/
+
+/* Licensing section start*/
+.license{
+	margin-top: 50px;
+}
+.license-item{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	padding: 15px;
+	margin-bottom: 0px;
+}
+/* Licensing section end*/
