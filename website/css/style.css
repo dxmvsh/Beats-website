@@ -24,9 +24,6 @@ body{
 	transition: .3s;
 }
 
-.nav-item:hover .nav-item.active{
-	border: none;
-}
 .navbar{
 	height: 50px;
 }
@@ -118,10 +115,56 @@ body{
 .license{
 	margin-top: 50px;
 }
+.license .container{
+}
+.license-item-container{
+	transition: all .2s ease-in-out;
+}
+.license-item-container:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	z-index: 3;
+}
 .license-item{
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	padding: 15px;
 	margin-bottom: 0px;
 }
+.license-item-price{
+	background-color: #d1002f ;
+}
 /* Licensing section end*/
+
+/* Advantages section start */
+.advantages{
+	height: 650px;
+	background: url("../assets/img/img19.jpg") center no-repeat !important; 
+	padding: 0;
+	color: white;
+}
+.advantages-overlay{
+	background: rgba(0,0,0,0.7);
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+.advantages-item-info i{
+	font-size: 30px;
+}
+.advantages-item-icon{
+	border: 2px solid #d1002f;
+	border-radius: 10px;
+	padding: 5px 5px;
+	width: 70px;
+	height: 100px;
+	height: auto;
+}
+.advantages-item-container{
+	padding-left: 20px; 
+	padding-right: 20px; 
+}
+.advantages-item-text h4{
+	color: #d1002f;
+}
+/* Advantages section end */
