@@ -1,7 +1,12 @@
 /* Fonts start */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500');
 /* Fonts end */
-
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
 body{
 	font-family: 'Work Sans', sans-serif !important;
 }
@@ -15,28 +20,127 @@ body{
 	width: 27px;
 }
 /*Navbar section start*/
-.nav-item.active{
-	border-bottom: black 2px solid;
+header{
+	position: absolute;
+	z-index: 100;
+}
+.logo {
+	line-height: 60px;
+	position: fixed;
+	float: left;
+	margin: 16px 46px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
 }
 
-.nav-item:hover{
-	border-bottom: black 2px solid;
+nav {
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+}
+
+nav ul {
+	line-height: 60px;
+	list-style: none;
+	background: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	color: #fff;
+	padding: 0;
+	text-align: right;
+	margin: 0;
+	padding-right: 40px;
 	transition: .3s;
 }
 
-.navbar{
-	height: 50px;
-	background-color: #d1002f;
-	color: white;
+nav.black ul {
+	background: #000;
 }
-.navbar-nav{
-	height: 42px;
+
+nav ul li {
+	display: inline-block;
+	padding: 16px 40px;;
+}
+
+nav ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.logo a{
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+}
+.menu-icon {
+	line-height: 60px;
+	width: 100%;
+	background: #000;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 15px 24px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+}
+@media(max-width: 786px) {
+
+	.logo {
+		  position: fixed;
+		  top: 0;
+		  margin-top: 16px;
+	}
+
+	nav ul {
+		  max-height: 0px;
+		  background: #000;
+		  padding-right: 0px;
+	}
+
+	nav.black ul {
+		  background: #000;
+	}
+
+	.showing {
+		  max-height: 34em;
+	}
+
+	nav ul li {
+		  box-sizing: border-box;
+		  width: 100%;
+		  padding: 24px;
+		  text-align: center;
+	}
+
+	.menu-icon {
+		  display: block;
+	}
+
+}
+nav ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.link:after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s;
+}
+.link:hover:after{
+	width: 100%;
+	transition: width .3s;
 }
 /* Navbar section end */
 
 /* Video section start*/
 .vid{
-	height: 500px;
+	height: 560px;
 	width: 100%;
 }
 .vid h1{
@@ -146,6 +250,10 @@ body{
 }
 .advantages-item-text h4{
 	color: #d1002f;
+}
+
+@media(max-width: 576px){
+	
 }
 /* Advantages section end */
 
