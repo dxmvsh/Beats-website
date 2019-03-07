@@ -34,76 +34,53 @@ body{
 }
 /* Navbar section end */
 
-/* Carousel section start */
-.carousel-control-next, .carousel-control-prev{
-	width: 5%;
-	z-index: 5;
+/* Video section start*/
+.vid{
+	height: 500px;
+	width: 100%;
 }
-.carousel-item{
-	height: 550px;
+.vid h1{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+	text-transform: uppercase; 
+	text-align: center; 
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600; 
+	letter-spacing: 10px;
 }
-@media only screen and (max-width: 1080px){
-	.carousel-item{
-		height: auto;
-	}
-}
-.carousel-overlay{
+.vid-overlay{
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	z-index: 3;
 	background-color: rgba(0,0,0,.5);
 }
-.carousel-caption{
-	top: 35% !important;
-}
-.carousel-caption h1{
-	margin-bottom: 20px;
-	font-size: 60px;
-}
-@media only screen and (max-width: 768px){
-	.carousel-caption{
-		top: 35% !important;
-	}
-	.carousel-caption h1{
-		margin-bottom: 10px;
-		font-size: 40px;
-	}
-	.carousel-caption a{
-		font-size: 25px;
-	}
-}
-@media only screen and (max-width: 414px){
-	.carousel-caption{
-		top: 35% !important;
-	}
-	.carousel-caption h1{
-		margin-bottom: 10px;
-		font-size: 20px;
-	}
-	.carousel-caption a{
-		font-size: 10px;
-	}
-}
 .btn{
 	cursor: pointer;
 	border: 0.5px solid #fff;
 	border-radius: 0px;
 }
-.btn-slider{
+.btn-video{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
 	padding: 5px 20px;
 	font-size: 25px;
 	color: #fff;
 	text-align: center;
 }
 
-.btn-slider:hover{
+.btn-video:hover{
 	border-color: #fff;
-	color: #d1002f;
+	color: #000;
 	background-color: #fff;
 	transition: .2s;
 }
-/* Carousel section end */
+/* Video section end*/
 
 /* Store section start*/
 .store{
