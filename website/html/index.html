@@ -12,10 +12,7 @@
 	<title>Zone6teen Beats</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script type="text/javascript" src="../js/script.js"></script>
-	<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="../js/Vide/src/jquery.vide.js"></script>
 
 </head>
@@ -31,10 +28,10 @@
 		</div>
 		<div class="menu">
 			<ul>
-				<li><a href="#" class="link">Home</a></li>
-				<li><a href="#" class="link">Store</a></li>
-				<li><a href="#" class="link">Licensing</a></li>
-				<li><a href="#" class="link">Contacts</a></li>
+				<li><a id="btn-home" href="#" class="link">Home</a></li>
+				<li><a id="btn-store" href="#store" class="link">Store</a></li>
+				<li><a id="btn-license" href="#license" class="link">Licensing</a></li>
+				<li><a id="btn-contacts" href="#contacts" class="link">Contacts</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -45,7 +42,7 @@
 
 <!-- Video start-->	
 
-	<section class="vid" data-vide-bg="../assets/vid/vid.webm">
+	<section class="vid" data-vide-bg="../assets/vid/vid">
 		<div class="vid-overlay">
 			<h1>Purchase high quality beats</h1>
 			<a class="btn btn-video" href="#store">Purchase</a>
@@ -69,7 +66,6 @@
 	</section>
 <!-- Store end -->
 	
-	<div class="separator container-fluid mt-5" ></div>
 
 <!-- Licensing info start -->
 	<section id="license" class="license">
@@ -79,7 +75,7 @@
 			</div>
 			<div class="container-fluid"> 
 				<div class="row mt-5">
-					<div class="license-item-container col-sm-6 col-md-3 text-center bg-white shadow-sm">
+					<div class="license-item-container col-sm-6 col-md-3 text-center shadow-sm">
 						<div class="license-item">
 							<div class="license-item-title">
 								<h5>MP3 Lease</h5>
@@ -88,7 +84,7 @@
 								<h2>$29.99</h2>
 							</div>
 							<div class="license-item-info">
-								<div class="license-item-info-line" style="color:#d1002f">
+								<div class="license-item-info-line" style="color:#e31c25">
 									<p>Perfect for independent artists working on a small-scale project</p>
 								</div>
 								<div class="separator container-fluid my-2" ></div>
@@ -110,7 +106,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="license-item-container col-sm-6 col-md-3 text-center bg-white shadow-sm">
+					<div class="license-item-container col-sm-6 col-md-3 text-center shadow-sm">
 						<div class="license-item">
 							<div class="license-item-title">
 								<h5>WAV Lease</h5>
@@ -119,7 +115,7 @@
 								<h2>$49.99</h2>
 							</div>
 							<div class="license-item-info">
-								<div class="license-item-info-line" style="color:#d1002f">
+								<div class="license-item-info-line" style="color:#e31c25">
 									<p>Perfect for independent artists working on a small-scale project</p>
 								</div>
 								<div class="separator container-fluid my-2" ></div>
@@ -141,7 +137,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="license-item-container col-sm-6 col-md-3 text-center bg-white shadow-sm">
+					<div class="license-item-container col-sm-6 col-md-3 text-center shadow-sm">
 						<div class="license-item">
 							<div class="license-item-title">
 								<h5>Tracked Out Lease</h5>
@@ -150,7 +146,7 @@
 								<h2>$99</h2>
 							</div>
 							<div class="license-item-info">
-								<div class="license-item-info-line" style="color:#d1002f">
+								<div class="license-item-info-line" style="color:#e31c25">
 									<p>Perfect for artists in need of track-outs with a higher distribution limit</p>
 								</div>
 								<div class="separator container-fluid my-2" ></div>
@@ -172,7 +168,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="license-item-container col-sm-6 col-md-3 text-center bg-white shadow-sm">
+					<div class="license-item-container col-sm-6 col-md-3 text-center shadow-sm">
 						<div class="license-item">
 							<div class="license-item-title">
 								<h5>Unlimited Rights</h5>
@@ -181,7 +177,7 @@
 								<h2>$200</h2>
 							</div>
 							<div class="license-item-info">
-								<div class="license-item-info-line" style="color:#d1002f">
+								<div class="license-item-info-line" style="color:#e31c25">
 									<p>Perfect for large-scale projects without distribution limits</p>
 								</div>
 								<div class="separator container-fluid my-2" ></div>
@@ -207,8 +203,6 @@
 			</div>
 	</section>
 <!-- Licensing info end -->
-
-	<div class="separator container-fluid mt-5" ></div>
 
 <!-- Advantages start -->
 	<section id="advantages" class="advantages container-fluid">
@@ -331,6 +325,15 @@
 						}
 				})
 			})
+			$('.link').on('click', function(event) {
+				var target = $(this.getAttribute('href'));
+				if( target.length ) {
+						event.preventDefault();
+						$('html, body').animate({
+								scrollTop: target.offset().top
+						}, 1000);
+				}
+			});
 		</script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

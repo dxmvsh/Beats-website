@@ -9,6 +9,8 @@ html, body {
 }
 body{
 	font-family: 'Work Sans', sans-serif !important;
+	background-color: #000;
+	color: #fff;
 }
 .separator{
 	display: block;
@@ -189,6 +191,7 @@ nav ul li a:hover{
 /* Store section start*/
 .store{
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .store-main{
 	height: 700px;
@@ -197,12 +200,18 @@ nav ul li a:hover{
 
 /* Licensing section start*/
 .license{
-	margin-top: 50px;
+	background-image: url('../assets/img/bg.jpg'); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 700px;
 }
-.license .container{
+.license-header{
+	padding-top: 75px;
 }
 .license-item-container{
 	transition: all .2s ease-in-out;
+	background-color: #1C1C1C;
 }
 .license-item-container:hover{
 	transform: scale(1.05);
@@ -216,12 +225,16 @@ nav ul li a:hover{
 	margin-bottom: 0px;
 }
 .license-item-price{
-	background-color: #d1002f ;
+	background-color: #e31c25 ;
+}
+.license-item-info-line, .license-item-title{
+	color:#fff;
 }
 /* Licensing section end*/
 
 /* Advantages section start */
 .advantages{
+	margin-top: 150px;
 	height: 650px;
 	background: url("../assets/img/img19.jpg") center no-repeat !important; 
 	padding: 0;
